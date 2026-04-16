@@ -1,0 +1,181 @@
+.hide-balance-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(8,29,67,.82) 0%, rgba(8,29,67,.9) 100%),
+    url('../images/americanfortress_fortress_flag_1.webp') center 50% / 105% auto no-repeat;
+  background-color: #081D43;
+  padding: 98px 0 0;
+}
+
+.hide-balance-section::before {
+  content: none;
+}
+
+.hide-balance-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 58px;
+  background: url('../images/top.png') center bottom / cover no-repeat;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.hide-balance-header {
+  text-align: center;
+  margin: 0 auto 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.hide-balance-title {
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  font-family: Monumentextended, Arial, sans-serif;
+  font-size: clamp(2.1rem, 4.2vw, 3.3rem);
+  line-height: 1;
+  background: linear-gradient(180deg, #ffd7d7 0%, #ff9a9a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hide-balance-text {
+  margin: 0 auto;
+  max-width: 1200px;
+  color: #fdfaf4;
+  font-size: 1.35rem;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+.hide-balance-scene {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hide-balance-card {
+  width: min(100%, 476px);
+  background: #1a2557;
+  border: 1px solid rgba(126, 155, 218, .18);
+  border-radius: 24px;
+  box-shadow: 0 30px 65px rgba(0,0,0,.45), inset 0 2px 8px rgba(182, 205, 255, .18);
+  padding: 20px 20px 18px;
+}
+
+.hb-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.hb-tab {
+  border: 0;
+  color: #d0dcf7;
+  background: transparent;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 8px 18px;
+  border-radius: 9px;
+}
+
+.hb-tab.is-active {
+  background: #ef1d27;
+  color: #fff;
+}
+
+.hb-field-wrap { margin-bottom: 10px; }
+.hb-label { display: block; color: #94addf; margin-bottom: 5px; font-size: 1.05rem; }
+
+.hb-field {
+  border: 1px solid rgba(128, 157, 214, .22);
+  border-radius: 12px;
+  background: rgba(15, 39, 84, .5);
+  padding: 9px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 56px;
+}
+
+.hb-field strong { color: #f2f6ff; display: block; line-height: 1.1; font-size: 1.25rem; }
+.hb-field span { color: #a4b8e4; font-size: .95rem; }
+.hb-chevron { color: #c9d8fb; font-size: 1rem; }
+
+.hb-toggle {
+  margin: 10px 0 8px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  color: #fdfaf4;
+  border: 0;
+  padding: 3px 0;
+  gap: 14px;
+}
+
+.hb-toggle > span:first-child {
+  white-space: nowrap;
+  font-size: 1.05rem;
+  color: #c5d5f5;
+}
+
+.hb-switch { width: 30px; height: 16px; background: #ef1d27; border-radius: 999px; position: relative; }
+.hb-knob { width: 12px; height: 12px; border-radius: 50%; background: #fff; position: absolute; top: 2px; left: 16px; transition: .2s ease; }
+.hide-balance-card[data-hidden="true"] .hb-knob { left: 2px; }
+
+.hb-stealth {
+  border: 1px solid rgba(0, 224, 205, .55);
+  border-radius: 10px;
+  background: rgba(7, 71, 90, .2);
+  padding: 9px 12px;
+  margin-bottom: 12px;
+}
+
+.hb-stealth-label { color: #22ebcf; font-size: .68rem; font-weight: 700; margin-bottom: 3px; }
+.hb-stealth code { color: #dff7ff; font-size: .84rem; word-break: break-all; }
+.hb-stealth-note { color: #8bbacc; font-size: .6rem; margin-top: 2px; }
+
+.hb-footer { margin-bottom: 10px; }
+.hb-state { color: #ffb4b4; font-weight: 700; font-size: 1rem; }
+.hide-balance-card[data-hidden="true"] .hb-state { color: #7bf4ad; }
+
+.hb-send-btn { width: 100%; justify-content: center; display: flex; border-radius: 12px; }
+.hb-send-btn .cta-text { font-size: 1.15rem; }
+
+.hide-balance-section .hide-balance-logos {
+  margin-top: 74px;
+  padding: 138px 26px 92px;
+  background: linear-gradient(180deg, rgba(8, 29, 67, 0) 0%, rgba(16, 44, 82, 0.24) 26%, rgba(33, 70, 108, 0.56) 68%, rgba(63, 111, 139, 0.9) 100%);
+}
+
+.hide-balance-section .hide-balance-logos .frame-1321316290 {
+  row-gap: 44px;
+}
+
+.hide-balance-section .hide-balance-logos .text-6 {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .hide-balance-text { white-space: normal; }
+}
+
+@media screen and (max-width: 767px) {
+  .hide-balance-section { padding-top: 72px; }
+  .hide-balance-text { font-size: 1.05rem; white-space: normal; }
+  .hide-balance-card { border-radius: 18px; padding: 16px; }
+
+  .hide-balance-section .hide-balance-logos {
+    margin-top: 26px;
+    padding-top: 104px;
+    padding-bottom: 36px;
+  }
+}
